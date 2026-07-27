@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* Variáveis de cores personalizadas para a UI escura estilo Discord */
-  --color-dark-900: #0f172a;
-  --color-dark-800: #1e293b;
-  --color-dark-700: #334155;
-  --color-dark-600: #475569;
+  /* Surface & Background (Cinza Grafite) */
+  --color-pulse-950: #0B0D12;
+  --color-pulse-900: #12151E;
+  --color-pulse-800: #1A1E2E;
+  --color-pulse-700: #282E43;
+
+  /* Acentos Híbridos (WhatsApp + Discord) */
+  --color-emerald-accent: #10B981;
+  --color-violet-accent: #7C3AED;
 }
 
-body {
-  background-color: var(--color-dark-900);
-  color: #f8fafc;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  margin: 0;
-  overflow: hidden;
+/* Utilitário para ocultar barra de rolagem mantendo o scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
